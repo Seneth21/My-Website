@@ -1,0 +1,245 @@
+
+<link rel="stylesheet" href="./Seneth Dasanayaka_files/Split.css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href=".html">
+    <link rel="icon" type="image/png" href="./Seneth Dasanayaka_files/Ghost_Both_Black.png">
+  
+
+<head>
+    <header>
+        <div class="container02">
+            
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Slider with Text and Navigation</title>
+    </header>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            overflow-x: hidden;
+
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            text-align: center;
+        }
+
+        /* Back Button */
+        .back-button {
+            position: absolute;
+            top: 22px;
+            left: 19px;
+            font-size: 1.4rem;
+    color: #ffffff;
+    font-weight: 550;
+    cursor: pointer;
+    transition: 0.5s ease;
+    text-shadow: 0 0 25px #3d7fe2;
+        }
+
+        .back-button:hover {
+            color: #3d7fe2;
+    transform: scale(1.01) translateY(-5px);
+    text-shadow: 0 0 25px #3d7fe2;
+
+}
+
+.back-button:hover,
+.back-button.active{
+    color: #3d7fe2;
+    border-bottom: 2.5px solid #3c7ee2;
+}
+
+       /* Title and Subtitle */
+       .title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        /* Button Container */
+        .button-container {
+            display: flex;
+            flex-direction: row;
+            gap: 6rem;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .button-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .button {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 15rem;
+            height: 15rem;
+            background-color: transparent;
+            border: 0.2rem solid #ffffff;
+            font-size: 7.5rem;
+            border-radius: 500%;
+            transition: 0.3s ease;
+            color: #ffffff;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .button:hover {
+            color: black;
+            transform: scale(1.1) translateY(-5px);
+            background-color: #ffffff;
+            box-shadow: 0 0 25px #3d7fe2;
+        }
+
+        .button-label {
+            margin-top: 2.5rem;
+            font-size: 1.2rem;
+            color: #ffffff;
+        }
+
+        /* Container Effects */
+        .container02 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: fadeInUp 1.5s ease-out forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .button-container {
+                gap: 4rem;
+            }
+
+            .button {
+                width: 8rem;
+                height: 8rem;
+                font-size: 4rem;
+            }
+
+            .button-label {
+                font-size: 1rem;
+            }
+
+            .title {
+                font-size: 2rem;
+            }
+
+            .subtitle {
+                font-size: 1.2rem;
+            }
+
+            .back-button {
+                font-size: 1.2rem;
+                padding: 0.8rem 1.2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .button-container {
+                gap: 2rem;
+            }
+
+            .button {
+                width: 6rem;
+                height: 6rem;
+                font-size: 2rem;
+            }
+
+            .button-label {
+                font-size: 0.9rem;
+            }
+
+            .title {
+                font-size: 1.5rem;
+            }
+
+            .subtitle {
+                font-size: 1rem;
+            }
+
+            .back-button {
+                font-size: 1rem;
+                padding: 0.6rem 1rem;
+            }
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+    <div class="container02">
+        <a href="index.html" class="back-button">BACK</a>
+    </a>
+</header>
+
+            <div class="container02">
+                <h1 class="title">Take A Quick Peak At My Work</h1>
+                <h2 class="subtitle">And See What I’ve Been Working On</h2>
+                <div class="button-container">
+                    <div class="button-wrapper">
+                        <a href="Graphic Portfolio.html">
+                            <button class="button">
+                                <i class="fa-solid fa-laptop"></i>
+                            </button>
+                        </a>
+                        <span class="button-label">Design</span>
+                    </div>
+                    <div class="button-wrapper">
+                        <a href="Music Portfolio.html">
+                            <button class="button">
+                                <i class="fa-solid fa-headphones"></i>
+                            </button>
+                        </a>
+                        <span class="button-label">Music</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

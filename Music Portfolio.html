@@ -1,0 +1,386 @@
+
+<link rel="stylesheet" href="./Seneth Dasanayaka_files/individual.css">
+<link rel="stylesheet" href="./Seneth Dasanayaka_files/Music.css">
+<link rel="icon" type="image/png" href="./Seneth Dasanayaka_files/Ghost_Both_Black.png">
+
+<head>
+    <header>
+        <div class="container02">
+            <a href="Split02 Profile.html" class="Music02">BACK</a>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Audio Preview Page</title>
+    </header>
+    <style>
+         body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        .intro-section {
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0);
+            border-radius: 10px;
+            max-width: 90%;
+            margin: 0 auto 40px auto;
+        }
+
+        .intro-section h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            margin-top: 50px;
+        }
+
+        .intro-section p {
+            font-size: 18px;
+            color: #cccccc;
+            line-height: 1.5;
+        
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            display: flex;
+            flex-direction: column; /* Ensures all rows stack vertically */
+            align-items: center;
+            justify-content: center;
+            overflow-y: auto;
+        }
+
+        .audio-row{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Centers content horizontally */
+            align-items: center;
+            gap: 55px;
+            margin-bottom: 50px;
+        }
+
+        .audio-section{
+            flex: 1 1 45%;
+            max-width: 45%;
+            text-align: center;
+            background: #ffffff00;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px #ffffff00;
+            margin-bottom: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .audio-section h3, .video-section h3 {
+            font-size: 1.2rem;
+            color: #ffffff;
+            margin-bottom: 0px; /* Add space below text */
+        }
+
+        .audio-section h4, .video-section h4 {
+            font-size: 0.9rem;
+            color: #cccccc;
+            margin-bottom: 0px; /* Add space below text */
+        
+        }
+
+        audio {
+            width: 90%;
+            margin-top: 15px; /* Add space above the audio element */
+            border-radius: 150px;
+            outline: none;
+            border: 2px solid transparent;
+            box-shadow: 0 0 60px #7fa9e97a;
+            transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+        }
+
+        video {
+            width: 90%;
+            margin-top: 22px; /* Add space above the audio element */
+            border-radius: 15px;
+            outline: none;
+            border: 2px solid transparent;
+            box-shadow: 0 0 60px #7fa9e931;
+            transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+        }
+
+        audio:hover, video:hover {
+            transform: scale(1.05);
+            border-color: 3d7fe2e6;
+            box-shadow: 0 0 15px #3d7fe2fa;
+        }
+        
+        .Video-row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.Video-section {
+    flex: 1 1 45%; /* Takes up 45% of the width in larger screens */
+    max-width: 45%;
+    text-align: center;
+    background: #ffffff00;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px #ffffff00;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+video {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 15px;
+    border-radius: 15px;
+    outline: none;
+    border: 2px solid transparent;
+    box-shadow: 0 0 60px #7fa9e931;
+    transition: transform 0.3s, box-shadow 0.3s, border 0.3s;
+}
+
+@media (max-width: 768px) {
+    .Video-section {
+        flex: 1 1 100%; /* Stacks videos vertically */
+        max-width: 100%;
+    }
+
+    video {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    video {
+        max-width: 100%;
+        margin-top: 10px;
+        border-radius: 10px;
+    }
+}
+
+
+        @media (max-width: 768px) {
+            .audio-section, .video-section {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+            
+
+            .intro-section h1 {
+                font-size: 2rem;
+            }
+
+            .intro-section p {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .intro-section h1 {
+                font-size: 1.8rem;
+            }
+
+            .intro-section p {
+                font-size: 0.8rem;
+            }
+
+            audio, video {
+                border-radius: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container02">
+        <div class="intro-section">
+            <h1>Welcome to the Soul of My Music </h1>
+            <p>
+                Dive into a collection of original compositions designed to connect and inspire. Below, you'll find a diverse selection of tracks, each one crafted with its own unique vibe and rhythm. From calm, melodic flows to upbeat, dynamic tunes, every piece is a reflection of my passion for music. Take your time to explore and let the sounds tell their story. Feel free to return anytime to discover more of my musical creations and continue your journey through my soundscape.
+
+                <br><br>Thank you for listening !</p>
+        </div>
+
+        <div class="container">
+            <!-- Audio Rows -->
+            <div class="audio-row">
+                <div class="audio-section">
+                    <h3>Indian_Vibe_Export_V.5.6</h3>
+                    <h4>(Unreleased Original)</h4>
+                    <audio controls controlsList="nodownload" id="audio1">
+                        <source src="Seneth Dasanayaka_files/mymusicwork/Amuthu_Vibe_Export_V.5.6.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <div class="audio-section">
+                    <h3>Jazzy_With_Demo_Vox_V_1.5</h3>
+                    <h4>(Unreleased Original)</h4>
+                    <audio controls controlsList="nodownload" id="audio2">
+                        <source src="Seneth Dasanayaka_files/mymusicwork/Jazz_With_Vox_V_1.5.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="audio-section">
+                    <h3>I_Don't_Knwo_What_I'm_Doing_Export demo wave-05V</h3>
+                    <h4>(Unreleased Original)</h4>
+                    <audio controls controlsList="nodownload" id="audio3">
+                        <source src="Seneth Dasanayaka_files/mymusicwork/M-01 Export demo wave-05W t.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="audio-section">
+                    <h3>D_Colab_Export_V_07_Without_Vox</h3>
+                    <h4>(Unreleased Original)</h4>
+                    <audio controls controlsList="nodownload" id="audio7">
+                        <source src="Seneth Dasanayaka_files/mymusicwork/Demo_M_Export_V.7_Without vox.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="audio-section">
+                    <h3>P.O.V_Umba_Rose_Flower_Extended_V.1.2</h3>
+                    <h4>(Unreleased Original)</h4>
+                    <audio controls controlsList="nodownload" id="audio4">
+                        <source src="Seneth Dasanayaka_files/mymusicwork/P.O.V_Umba_Rose_Flower_Extended_V.1.2.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="audio-section">
+                    <h3>Sobana_Flute_Cover_Rough_Export_V2_</h3>
+                    <h4>(Unreleased Cover)</h4>
+                    <audio controls controlsList="nodownload" id="audio5">
+                        <source src="Seneth Dasanayaka_files/mymusicwork/Sobana_Flute_Cover_Rough_Export_V2_.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <div class="audio-section">
+                    <h3>Celestial_Melodies_Demo</h3>
+                    <h4>(Unreleased Original)</h4>
+                    <audio controls controlsList="nodownload" id="audio6">
+                        <source src="Seneth Dasanayaka_files/mymusicwork/Celestial Melodys Rough Export.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <!-- Video Rows -->
+            <div class="Video-row">
+                <div class="Video-section">
+                    <h3>The Day I Met You</h3>
+                    <h4>(An Original Composition)</h4>
+                    <video controls controlsList="nodownload">
+                        <source src="Seneth Dasanayaka_files/mymusicwork/The Day I Met You.mp4" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+                </div>
+                <div class="Video-section">
+                    <h3>The Infinity Reveal 01</h3>
+                    <h4>(An Original Composition)</h4>
+                    <video controls controlsList="nodownload">
+                        <source src="Seneth Dasanayaka_files/mymusicwork/The Infinity Reveal Trailer.mp4" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
+
+                </video>
+            </div>
+            <div class="Video-section">
+                <h3>The Infinity Reveal 02</h3>
+                <h4>(An Original Composition)</h4>
+                <video controls controlsList="nodownload">
+                    <source src="Seneth Dasanayaka_files/mymusicwork/The Infinity Reveal.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+             </div>
+
+        <div class="Video-section">
+            <h3>Aya_Wenuwen_5.9_Export</h3>
+            <h4>(An Original Composition)</h4>
+            <video controls controlsList="nodownload">
+                <source src="Seneth Dasanayaka_files/mymusicwork/I_Don't_know_2.8_.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+                </div>
+
+            <div class="Video-section">
+                <h3>Shadabisheka_Intro</h3>
+                <h4>(An Original Composition)</h4>
+                <video controls controlsList="nodownload">
+                     <source src="Seneth Dasanayaka_files/mymusicwork/Shadabisheka 3.mp4" type="video/mp4">
+                        Your browser does not support the video element.
+                </video>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+    const audioElements = document.querySelectorAll("audio");
+
+    audioElements.forEach(audio => {
+        let isSpeechTriggered = { 20: false, 40: false, 120: false }; // Keeps track of triggered timestamps
+        
+        const speakMessage = (message) => {
+            const speech = new SpeechSynthesisUtterance('N01 Unreleased');
+            speech.lang = "en-US";
+            speechSynthesis.speak(speech);
+        };
+
+        audio.addEventListener("play", () => {
+            isSpeechTriggered = { 20: false, 40: false, 120: false }; // Reset triggers when playback starts
+        });
+
+        audio.addEventListener("timeupdate", () => {
+            const currentTime = Math.floor(audio.currentTime); // Get current playback time in seconds
+
+            if (currentTime === 20 && !isSpeechTriggered[20]) {
+                speakMessage("N01 Unreleased");
+                isSpeechTriggered[20] = true; // Mark as triggered
+            }
+            if (currentTime === 40 && !isSpeechTriggered[40]) {
+                speakMessage("N01 Unreleased");
+                isSpeechTriggered[40] = true; // Mark as triggered
+            }
+            if (currentTime === 120 && !isSpeechTriggered[120]) {
+                speakMessage("N01 Unreleased");
+                isSpeechTriggered[120] = true; // Mark as triggered
+            }
+        });
+
+        audio.addEventListener("pause", () => {
+            speechSynthesis.cancel(); // Stop speech if the audio is paused
+        });
+
+        audio.addEventListener("ended", () => {
+            speechSynthesis.cancel(); // Stop speech if the audio ends
+        });
+    });
+});
+
+    </script>
+    </body>
+    </html>
+    
+    
