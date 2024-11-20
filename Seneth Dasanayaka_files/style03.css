@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+
+    font-family: 'Poppins', sans-serif;}
+    
+header {
+    background-color: #000000; /* Black with 70% opacity */
+    background: linear-gradient(180deg, #000000, #000000de, #00000048);
+    width: 100%; /* Adjusted width */
+    box-shadow: 0 0 2500px #000000;
+    position: fixed;
+    top: -21px; /* Adjusted to 0 for a better top positioning */
+    left: 0;
+    padding: 3rem 4%; /* Adjusted padding for a sleeker look */
+    background-color: transparent;
+    filter: drop-shadow(10px);
+    display: flex;
+    justify-content: center; /* Centered content */
+    align-items: center;
+    z-index: 10000;
+}
+
+.container02 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInUp 1.5s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.Music02{
+    margin-top: -0px;
+    margin-right: 0;
+    font-size: 1.6rem;
+    color: #ffffff;
+    font-weight: 550;
+    cursor: pointer;
+    transition: 0.5s ease;
+    text-shadow: 0 0 25px #3d7fe2;
+   
+}
+
+.Music02:hover{
+    color: #3d7fe2;
+    transform: scale(1.01) translateY(-5px);
+    text-shadow: 0 0 25px #3d7fe2;
+}
+
+.Music02:hover,
+.Music02.active{
+    color: #3d7fe2;
+    border-bottom: 2.5px solid #3c7ee2;
+}
+
+
