@@ -329,4 +329,76 @@ header{
 }
 
 
-  
+
+/* Header */
+header {
+    width: 100%;
+    background: linear-gradient(180deg, #000000, #000000b9, transparent);
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    text-align: center;
+}
+
+.nav-link {
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-shadow: 0 0 25px #3d7fe2;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #3d7fe2;
+    transform: scale(1.05) translateY(-3px);
+}
+
+/* About Section */
+
+
+/* Footer */
+.footer {
+    width: 100%;
+
+    padding: 1rem 2rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+
+.watermark {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    opacity: 0.7;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .text-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .text-content p {
+        font-size: 0.9rem;
+    }
+
+    .nav-link {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-content p {
+        font-size: 0.8rem;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+}
