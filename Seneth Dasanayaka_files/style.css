@@ -51,7 +51,7 @@ header{
     position: fixed;
     top: 0px;
     left: 0px;
-    width: 150%;
+    width: 100%;
     padding: 2.0rem 4%;
     background-color: transparent;
     filter: drop-shadow(10px);
@@ -331,16 +331,7 @@ header{
 
 
 
-/* Header */
-header {
-    width: 100%;
-    background: linear-gradient(180deg, #000000, #000000b9, transparent);
-    padding: 1rem 2rem;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    text-align: center;
-}
+
 
 .nav-link {
     font-size: 1.5rem;
